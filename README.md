@@ -1,8 +1,12 @@
 # PhotographyArt
 The scenario includes the information and the level of detail that is expected from the initial stage of the requirement gathering process. For this reason, make any assumptions deemed necessary to make the system under study more complete. This would mean filling the gaps rather than adding more requirements. 
 PhotographyArt is an online company that has freelance photographers (artists) registered with them. They can be booked through the company, they also teach photography classes and the company is organising exhibitions from time to time where they exhibit their photographs. The company requires a web application to manage the stated.
+
 Casual visitors would only be able to read the provided information on the site. They should be able to view the artists’ profiles and all the classes available. Unless they register with the site they cannot book an artist or the classes. Any artist who would like to register with the site needs to fill in and submit an application form, this is to maintain high standards. They will receive a response and be either accepted or rejected by the manager. 
+
 Once registered artist can create their own profile by providing some personal information and uploading some of their art. This is to give the students evidence of their artistic ability and to promote their own art. They will be assigned to teach classes by the manager, that are within their area of expertise. Before they start their classes they need to upload the teaching material for the students to access.  
 Registered users should be able to do everything that casual visitors can do plus book sessions. They should be able to give reviews for the classes and communicate with the lecturers through the app. 
+
 The managers are responsible for writing and maintaining general information about the service they provide. They create timetables for classes including the title, a brief overview and assign a lecturer to each class along with the suggested pre-requisite knowledge/skills. 
+
 The managers also need to view reports related to the booked classes. The payments will be processed through the application, but by the third party company. The payments will go to the company and the manager will calculate the amount that the lecturers need to receive through the app. The management would like to collect the registered users reviews to check if there are any issues with the classes.
