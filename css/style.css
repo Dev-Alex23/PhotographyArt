@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #303030;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 3.5rem;
+}
+
+header .logo a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-family: 'Noto Serif';
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header .nav-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header .nav-links ul li {
+  margin-left: 3em;
+  text-transform: uppercase;
+  line-height: 30px;
+  position: relative;
+}
+
+header .nav-links ul li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #892CDC;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header .nav-links ul li:hover::after {
+  width: 100%;
+}
+
+header .nav-links ul li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  list-style: none;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+header .nav-links ul li a:hover {
+  color: white;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+header .sign-in a {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  cursor: pointer;
+  background-color: #892CDC;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+header .sign-in a:hover {
+  color: black;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.hero {
+  width: 100%;
+  height: 849px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 128px;
+}
+
+.hero .left-hero {
+  height: 100%;
+  width: 50%;
+}
+
+.hero .left-hero span {
+  color: #892CDC;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1rem 3.5rem;
+}
+
+.hero .left-hero .h1 {
+  color: white;
+  font-size: 82px;
+  font-family: 'Noto Serif';
+  text-transform: capitalize;
+  margin: 1rem 3.5rem;
+}
+
+.hero .left-hero p {
+  color: #d1d1d1;
+  word-wrap: break-word;
+  margin: 3em 6em 3em 3.5em;
+  font-size: 18px;
+}
+
+.hero .left-hero button {
+  margin: 1rem 3.5rem;
+  cursor: pointer;
+  background-color: #892CDC;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.hero .left-hero button:hover {
+  color: black;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.hero .right-hero {
+  height: 100%;
+  width: 50%;
+}
+
+.hero .right-hero img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.do-what-you-love {
+  width: 100%;
+  height: 800px;
+  background: #1C1C1C;
+}
+
+.do-what-you-love .heading {
+  padding-top: 1.5em;
+  margin-bottom: 80px;
+}
+
+.do-what-you-love .heading p {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.do-what-you-love .heading p span {
+  color: #892CDC;
+}
+
+.do-what-you-love .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 6em 3em 3.5em;
+}
+
+.do-what-you-love .content .content-left {
+  width: 50%;
+}
+
+.do-what-you-love .content .content-left img {
+  width: 600px;
+  height: 450px;
+}
+
+.do-what-you-love .content .content-right {
+  width: 50%;
+}
+
+.do-what-you-love .content .content-right p {
+  font-size: 82px;
+  font-family: 'Noto Serif';
+  color: white;
+  text-transform: capitalize;
+  padding-left: 1em;
+}
+
+.do-what-you-love .content-text {
+  color: #d1d1d1;
+  font-size: 20px;
+  padding: 1em 3.5em 1em 3.5em;
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.showcase-work {
+  width: 100%;
+  height: 800px;
+}
+
+.showcase-work .heading {
+  padding-top: 1.5em;
+  margin-bottom: 80px;
+}
+
+.showcase-work .heading p {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.showcase-work .heading p span {
+  color: #892CDC;
+}
+
+.showcase-work .painting .show-paint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 6em 3em 3.5em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase-work .painting .show-paint img {
+  width: 380px;
+  height: 550px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.showcase-work .painting .show-paint img:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+}
+
+.showcase-work .painting .show-paint .img {
+  width: 380px;
+  height: 600px;
+}
+
+.show-support {
+  width: 100%;
+  height: 800px;
+  background: #1C1C1C;
+}
+
+.show-support .heading {
+  padding-top: 1.5em;
+  margin-bottom: 80px;
+}
+
+.show-support .heading p {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins';
+  text-align: center;
+}
+
+.show-support .heading p span {
+  color: #892CDC;
+}
+
+.show-support .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3em 6em 3em 3.5em;
+}
+
+.show-support .content .content-left {
+  width: 50%;
+}
+
+.show-support .content .content-left p {
+  font-size: 82px;
+  font-family: 'Noto Serif';
+  color: white;
+  text-transform: capitalize;
+}
+
+.show-support .content .content-right {
+  width: 50%;
+  margin-left: 5em;
+}
+
+.show-support .content .content-right img {
+  width: 600px;
+  height: 450px;
+}
+
+.show-support .content-text {
+  color: #d1d1d1;
+  font-size: 20px;
+  padding: 1em 3.5em 1em 3.5em;
+  text-align: center;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer h1 {
+  color: #892CDC;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .footer-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-heading h2 {
+  color: #892CDC;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-heading h4 {
+  color: white;
+  margin-bottom: .7em;
+}
+
+footer .footer-heading a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: .7em;
+}
+
+footer .footer-heading .footer-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-heading .footer-email #email {
+  width: 250px;
+  height: 40px;
+  border: none;
+}
+
+footer .footer-heading .footer-email #email::-webkit-input-placeholder {
+  color: #d1d1d1;
+}
+
+footer .footer-heading .footer-email #email:-ms-input-placeholder {
+  color: #d1d1d1;
+}
+
+footer .footer-heading .footer-email #email::-ms-input-placeholder {
+  color: #d1d1d1;
+}
+
+footer .footer-heading .footer-email #email::placeholder {
+  color: #d1d1d1;
+}
+
+footer .footer-heading .footer-email #submit {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background-color: #892CDC;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

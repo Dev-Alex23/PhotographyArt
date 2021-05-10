@@ -1,0 +1,151 @@
+@import "./components/variables";
+
+body {
+  height: 90vh;
+}
+
+.circle {
+  clip-path: circle(50.6% at 10% 66%);
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  // display: none;
+  z-index: -1;
+  // transform: translateY(250px);
+  overflow: hidden;
+  // transform: rotate(-45deg)
+}
+
+.container {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // margin: 10em 3.5em 0 3.5em;
+
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+
+
+  .img {
+
+    .hi {
+      transform: translateY(-30px);
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: flex;
+      margin: 0 auto;
+    }
+
+    form {
+      width: 300px;
+
+      h1 {
+        // display: flex;
+        // margin: 0 auto;
+        font-size: 3rem;
+        text-align: center;
+        color: $h1Color;
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+
+      .input-div {
+        display: grid;
+        grid-template-columns: 7% 93%;
+        margin: 25px 0;
+        padding: 5px 0rem;
+        border-bottom: 2px solid $ctaColor;
+
+        .input-flex {
+          display: flex;
+
+          input {
+
+            border: none;
+            outline: none;
+            width: 100%;
+            background: none;
+            font-size: 1.2em;
+            color: $h1Color;
+          }
+
+          i {
+            margin-right: 6px;
+            color: $h1Color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 1em;
+            font-size: 1.5rem;
+            font-size: bold;
+
+          }
+        }
+
+        h4 {
+          color: $h1Color;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+      }
+
+      .submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        a {
+          text-decoration: none;
+          text-transform: capitalize;
+          color: $h1Color;
+        }
+
+        input {
+          cursor: pointer;
+          margin-bottom: 2rem;
+          width: 100px;
+          height: 35px;
+          color: $h1Color;
+          background: $ctaColor;
+          border: none;
+          outline: none;
+          font-size: 1.2em;
+          font-weight: bold;
+          transition: transform .4s ease-in-out;
+
+          &:hover {
+            background: #621aa1;
+
+            &:focus {
+              background: rgb(240, 57, 57);
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

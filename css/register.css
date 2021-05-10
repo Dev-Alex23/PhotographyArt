@@ -1,0 +1,173 @@
+body {
+  height: 90vh;
+}
+
+.circle {
+  -webkit-clip-path: circle(50.6% at 10% 66%);
+          clip-path: circle(50.6% at 10% 66%);
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.container .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .img .hi {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.container .login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .login-container img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container .login-container form {
+  width: 300px;
+}
+
+.container .login-container form h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.container .login-container form .input-div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7% 93%;
+      grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0rem;
+  border-bottom: 2px solid #892CDC;
+}
+
+.container .login-container form .input-div .input-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .login-container form .input-div .input-flex input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: none;
+  font-size: 1.2em;
+  color: white;
+}
+
+.container .login-container form .input-div .input-flex i {
+  margin-right: 6px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 1em;
+  font-size: 1.5rem;
+  font-size: bold;
+}
+
+.container .login-container form .input-div h4 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container .login-container form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .login-container form .submit a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+
+.container .login-container form .submit input {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 100px;
+  height: 35px;
+  color: white;
+  background: #892CDC;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+}
+
+.container .login-container form .submit input:hover {
+  background: #621aa1;
+}
+
+.container .login-container form .submit input:hover:focus {
+  background: #f03939;
+}
+/*# sourceMappingURL=register.css.map */
